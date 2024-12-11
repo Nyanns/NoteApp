@@ -6,9 +6,9 @@ NoteApp is a simple application for ✍️ creating, 👀 viewing, ✏️ editin
 
 ## 🎯 Demo
 
-Check out the live demo [here](https://nyanns.github.io/etch-a-sketch-fun/)!
+Check out the live demo [here](https://nyannsnote.netlify.app)!
 
-![Game](https://github.com/Nyanns/etch-a-sketch-fun/blob/main/Images/images%201.png)
+![Game](https://github.com/Nyanns/NoteApp/blob/main/public/Recording2024-12-11225408-ezgif.com-video-to-gif-converter.gif)
 
 ---
 
