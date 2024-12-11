@@ -1,0 +1,43 @@
+/* Reset dasar */
+*,
+*::before,
+*::after {
+  margin: 0;
+}
+
+/* Atur elemen dasar */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-family: "VT323", monospace;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+}
+
+/* Atur elemen gambar dan media */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Atur heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: inherit;
+  color: inherit;
+}

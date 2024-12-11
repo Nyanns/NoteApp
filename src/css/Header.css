@@ -1,0 +1,96 @@
+/* Block: notes-header */
+.notes-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 32px;
+  padding-block: 8px;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0; /* Abu-abu terang */
+  background: linear-gradient(90deg, #0d0d0d, #1a1a1a); /* Gradasi hitam */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Glow putih */
+}
+
+.notes-header__app-name span {
+  font-size: 2rem; /* Ukuran teks */
+  text-shadow: 0 0 6px #ffffff, 0 0 12px #cccccc; /* Efek glow putih dan abu-abu */
+  color: #ffffff; /* Warna teks putih */
+
+  /* Animasi neon */
+  animation: neon-flicker-bw 1.5s infinite alternate;
+}
+
+/* Element: notes-header__app-name */
+.notes-header__app-name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff; /* Putih */
+  text-shadow: 0 0 6px #ffffff, 0 0 10px rgba(255, 255, 255, 0.3); /* Glow putih */
+  margin: 0;
+
+  /* Animasi neon */
+  animation: neon-flicker-bw 1.5s infinite alternate;
+}
+
+/* Keyframes untuk animasi hitam putih */
+@keyframes neon-flicker-bw {
+  0% {
+    text-shadow: 0 0 6px #ffffff, 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  25% {
+    text-shadow: 0 0 8px #ffffff, 0 0 12px rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 4px #ffffff, 0 0 8px rgba(255, 255, 255, 0.2);
+  }
+  75% {
+    text-shadow: 0 0 10px #ffffff, 0 0 14px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 6px #ffffff, 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Element: notes-header__input-bar */
+.notes-header__input-bar {
+  font-family: "VT323", monospace; /* Gaya futuristik */
+  width: 25%;
+  height: 1.5rem;
+  padding: 8px;
+  border: 2px solid #e0e0e0; /* Abu-abu terang */
+  background-color: transparent; /* Transparan */
+  color: #ffffff; /* Putih */
+  border-radius: 4px;
+  font-size: 1.2rem;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2),
+    inset 0 0 4px rgba(255, 255, 255, 0.1); /* Glow putih */
+  caret-color: #ffffff; /* Warna kursor */
+}
+
+/* Hover and Focus Effects */
+.notes-header__input-bar:hover,
+.notes-header__input-bar:focus {
+  background-color: #1a1a1a; /* Kontras abu-abu gelap */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3),
+    inset 0 0 6px rgba(255, 255, 255, 0.2); /* Glow lebih intens */
+  outline: none; /* Hilangkan outline default */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .notes-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .notes-header__app-name {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .notes-header__input-bar {
+    width: 100%;
+    height: 36px;
+  }
+}

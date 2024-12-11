@@ -1,0 +1,145 @@
+/* Wrapper untuk active-notes agar bisa di-center */
+.active-notes {
+  display: flex;
+  flex-wrap: wrap; /* Mengizinkan tombol membungkus ke baris baru */
+  flex-direction: column;
+  margin: 48px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #000; /* Latar belakang hitam */
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.active-notes__title {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-shadow: 0 0 5px #fff, 0 0 15px #fff;
+}
+
+.active-notes__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* CSS ketika tidak ada catatan arsip */
+.active-notes__empty {
+  width: 50%;
+  border: 1px solid #aaa;
+  font-size: 16px;
+  color: #aaa;
+  text-align: center;
+  justify-self: middle;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  animation: fadeIn 0.5s ease-in-out;
+  margin-left: auto;
+  margin-right: auto; /* Agar tetap berada di tengah */
+}
+
+/* Jika tidak ada catatan aktif atau arsip, tambahkan margin untuk mencegah berhimpit */
+.active-notes__grid--empty {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Gaya untuk setiap kartu catatan */
+.note-card {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex-wrap: wrap; /* Mengizinkan tombol membungkus ke baris baru */
+}
+
+.note-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #fff, 0 0 30px #fff;
+}
+
+.note-card__content {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-card__title {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #fff;
+}
+
+.note-card__body {
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.note-card__date {
+  font-size: 12px;
+  color: #555;
+  font-style: italic;
+  width: auto; /* Hanya selebar konten */
+  align-self: flex-end; /* Atur agar mengikuti kontennya */
+  flex-shrink: 0; /* Mencegah penyusutan */
+}
+
+/* Gaya untuk bagian aksi tombol */
+.note-card__actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap; /* Membungkus tombol ke baris baru */
+}
+.note-card__button {
+  background-color: #000; /* Hitam pekat */
+  color: #fff; /* Teks putih */
+  border: 2px solid #0ff; /* Warna neon cyan */
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  flex-grow: 1;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.note-card__button--delete {
+  background-color: #000; /* Hitam pekat */
+  color: #ff004d; /* Neon merah */
+  border: 2px solid #ff004d; /* Border merah neon */
+}
+
+.note-card__button--archive {
+  background-color: #000; /* Hitam pekat */
+  color: #0f0; /* Neon hijau */
+  border: 2px solid #0f0; /* Border hijau neon */
+}
+
+.note-card__button:hover {
+  background-color: #fff; /* Putih terang saat hover */
+  color: #000; /* Teks berubah jadi hitam */
+}
