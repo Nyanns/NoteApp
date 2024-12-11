@@ -1,126 +1,134 @@
 # 📝✨ NoteApp
 
-NoteApp adalah aplikasi sederhana untuk ✍️ membuat, 👀 melihat, ✏️ mengedit, dan 📦 mengarsipkan catatan. Aplikasi ini dibangun menggunakan 🖥️ React dengan state management sederhana dan dirancang untuk pengalaman pengguna yang 🤩 intuitif.
+NoteApp is a simple application for ✍️ creating, 👀 viewing, ✏️ editing, and 📦 archiving notes. This app is built using 🖥️ React with simple state management and designed for an 🤩 intuitive user experience.
 
 ---
 
-## 🎯 Fitur
+## 🎯 Demo
 
-- 🆕 **Membuat Catatan Baru**: ✨ Tambahkan catatan baru dengan 🖊️ judul dan 📝 isi.
-- 👓 **Melihat Catatan Aktif**: Tampilkan semua catatan yang belum di🗂️arsipkan.
-- 📥 **Mengarsipkan Catatan**: Arsipkan catatan aktif untuk memindahkannya ke bagian 📦 arsip.
-- 🗑️ **Menghapus Catatan**: Hapus catatan secara ♻️ permanen dari aplikasi.
-- 🔍 **Pencarian Catatan Aktif**: Cari catatan aktif berdasarkan 🔠 judul.
-- 🖌️ **Antarmuka Sederhana**: Desain UI 🎨 minimalis dan 📱 responsif.
+Check out the live demo [here](https://nyanns.github.io/etch-a-sketch-fun/)!
+
+![Game](https://github.com/Nyanns/etch-a-sketch-fun/blob/main/Images/images%201.png)
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 🎯 Features
 
-- ⚛️ **React**: Library utama untuk membangun antarmuka pengguna.
-- 🎨 **CSS Modules**: Untuk gaya yang 🧵 terisolasi.
-- 🏷️ **PropTypes**: Untuk validasi 🧐 props.
-- 💻 **JavaScript (ES6)**: Bahasa pemrograman utama.
+- 🆕 **Create New Notes**: ✨ Add new notes with a 🖊️ title and 📝 content.
+- 👓 **View Active Notes**: Display all notes that are not yet 🗂️ archived.
+- 📥 **Archive Notes**: Archive active notes to move them to the 📦 archive section.
+- 🗑️ **Delete Notes**: Permanently delete notes from the app.
+- 🔍 **Search Active Notes**: Search active notes by 🔠 title.
+- 🖌️ **Simple Interface**: A 🎨 minimalist and 📱 responsive UI design.
 
 ---
 
-## 🚀 Instalasi
+## 🛠️ Technologies Used
 
-Ikuti langkah-langkah berikut untuk menjalankan proyek ini secara 🏠 lokal:
+- ⚛️ **React**: The main library for building the user interface.
+- 🎨 **CSS Modules**: For 🧵 isolated styling.
+- 🏷️ **PropTypes**: For validating 🧐 props.
+- 💻 **JavaScript (ES6)**: The primary programming language.
 
-1. **🔗 Klon Repository**
+---
+
+## 🚀 Installation
+
+Follow these steps to run this project locally:
+
+1. **🔗 Clone the Repository**
 
    ```bash
    git clone https://github.com/Nyanns/NoteApp.git
    ```
 
-2. **📂 Masuk ke Direktori Proyek**
+2. **📂 Navigate to the Project Directory**
 
    ```bash
    cd NoteApp
    ```
 
-3. **📥 Instal Dependensi**
-   Pastikan ⚡ Node.js telah diinstal di sistem Anda, lalu jalankan:
+3. **📥 Install Dependencies**
+   Ensure ⚡ Node.js is installed on your system, then run:
 
    ```bash
    npm install
    ```
 
-4. **🏃 Jalankan Aplikasi**
+4. **🏃 Run the Application**
    ```bash
    npm start
    ```
-   Aplikasi akan terbuka di browser pada 🌐 `http://localhost:3000`.
+   The app will open in your browser at 🌐 `http://localhost:3000`.
 
 ---
 
-## 🗂️ Struktur Folder
+## 🗂️ Folder Structure
 
 ```plaintext
 NoteApp/
-├── public/             # 📁 File publik
+├── public/             # 📁 Public files
 ├── src/
-│   ├── components/     # 🧩 Komponen React
-│   ├── css/            # 🎨 File CSS Modules
+│   ├── components/     # 🧩 React components
+│   ├── css/            # 🎨 CSS Modules files
 │   ├── utils/          # 🛠️ Helper functions
-│   ├── App.js          # 🌟 Komponen utama aplikasi
-│   ├── index.js        # 🚪 Entry point React
-├── package.json        # 📦 Konfigurasi npm
+│   ├── App.js          # 🌟 Main application component
+│   ├── index.js        # 🚪 React entry point
+├── package.json        # 📦 npm configuration
 ```
 
 ---
 
-## 🖱️ Cara Penggunaan
+## 🖱️ How to Use
 
-1. **➕ Tambah Catatan Baru**
+1. **➕ Add New Notes**
 
-   - Masukkan 🖊️ judul dan 📝 isi catatan di form "Create Notes".
-   - Klik tombol "✅ Submit".
+   - Enter a 🖊️ title and 📝 content in the "Create Notes" form.
+   - Click the "✅ Submit" button.
 
-2. **📥 Arsipkan atau 🗑️ Hapus Catatan**
+2. **📥 Archive or 🗑️ Delete Notes**
 
-   - Klik tombol "📦 Archive" untuk mengarsipkan catatan.
-   - Klik tombol "🗑️ Delete" untuk menghapus catatan.
+   - Click the "📦 Archive" button to archive a note.
+   - Click the "🗑️ Delete" button to delete a note.
 
-3. **🔍 Cari Catatan**
-   - Ketikkan kata kunci di kotak 🔎 pencarian di bagian header.
-   - Hasil pencarian akan langsung ditampilkan di bagian 📓 Active Notes.
-
----
-
-## 🤝 Kontribusi
-
-Kontribusi sangat 🫶 diterima! Jika Anda ingin meningkatkan aplikasi ini, silakan:
-
-1. 🔀 Fork repository ini.
-2. Buat branch fitur baru:
-   ```bash
-   git checkout -b nama-fitur-anda
-   ```
-3. Commit perubahan Anda:
-   ```bash
-   git commit -m "🆕 Menambahkan fitur baru"
-   ```
-4. Push ke branch Anda:
-   ```bash
-   git push origin nama-fitur-anda
-   ```
-5. Buat Pull Request.
+3. **🔍 Search Notes**
+   - Type a keyword in the 🔎 search bar in the header.
+   - The search results will instantly appear in the 📓 Active Notes section.
 
 ---
 
-## ⚖️ Lisensi
+## 🤝 Contributions
 
-Proyek ini dilisensikan di bawah [📝 MIT License](LICENSE). Anda bebas menggunakan dan ✨ memodifikasi proyek ini untuk keperluan 🏢 pribadi atau komersial.
+Contributions are 🫶 highly welcome! If you'd like to improve this app, please:
+
+1. Fork this repository.
+2. Create a new feature branch:
+   ```bash
+   git checkout -b your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "🆕 Add a new feature"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin your-feature-name
+   ```
+5. Open a Pull Request.
 
 ---
 
-## 📞 Kontak
+## ⚖️ License
 
-Jika Anda memiliki pertanyaan atau 💡 saran, jangan ragu untuk menghubungi saya melalui:
+This project is licensed under the [📝 MIT License](LICENSE). You are free to use and ✨ modify this project for 🏢 personal or commercial purposes.
+
+---
+
+## 📞 Contact
+
+If you have any questions or 💡 suggestions, feel free to reach out to me through:
 
 - 🐙 **GitHub**: [Nyanns](https://github.com/Nyanns)
 - 🐦 **X (Twitter)**: [@NyansSensei](https://x.com/NyansSensei)
 
-Terima kasih telah menggunakan NoteApp! 😄
+Thank you for using NoteApp! 😄
